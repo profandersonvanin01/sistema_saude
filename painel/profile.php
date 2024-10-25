@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="col-sm-5 col-6 text-right m-b-30">
-                        <a href="edit-profile.php" class="btn btn-primary btn-rounded"><i class="fa fa-plus"></i> Edit Profile</a>
+                        <a href="edit-profile.php" class="btn btn-primary btn-rounded"><i class="fa fa-plus"></i> Editar Perfil</a>
                     </div>
                 </div>
                 <div class="card-box profile-header">
@@ -70,13 +70,12 @@
                                                 <h3 class="user-name m-t-0 mb-0">Cristina Groves</h3>
                                                 <small class="text-muted">Gynecologist</small>
                                                 <div class="staff-id">Employee ID : DR-0001</div>
-                                                <div class="staff-msg"><a href="chat.html" class="btn btn-primary">Send Message</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-7">
                                             <ul class="personal-info">
                                                 <li>
-                                                    <span class="title">Phone:</span>
+                                                    <span class="title">Telefone:</span>
                                                     <span class="text"><a href="#">770-889-6484</a></span>
                                                 </li>
                                                 <li>
@@ -84,15 +83,15 @@
                                                     <span class="text"><a href="#">cristinagroves@example.com</a></span>
                                                 </li>
                                                 <li>
-                                                    <span class="title">Birthday:</span>
+                                                    <span class="title">Aniversário:</span>
                                                     <span class="text">3rd March</span>
                                                 </li>
                                                 <li>
-                                                    <span class="title">Address:</span>
+                                                    <span class="title">Endereço:</span>
                                                     <span class="text">714 Burwell Heights Road, Bridge City, TX, 77611</span>
                                                 </li>
                                                 <li>
-                                                    <span class="title">Gender:</span>
+                                                    <span class="title">Sexo:</span>
                                                     <span class="text">Female</span>
                                                 </li>
                                             </ul>
@@ -105,9 +104,8 @@
                 </div>
 				<div class="profile-tabs">
 					<ul class="nav nav-tabs nav-tabs-bottom">
-						<li class="nav-item"><a class="nav-link active" href="#about-cont" data-toggle="tab">About</a></li>
-						<li class="nav-item"><a class="nav-link" href="#bottom-tab2" data-toggle="tab">Profile</a></li>
-						<li class="nav-item"><a class="nav-link" href="#bottom-tab3" data-toggle="tab">Messages</a></li>
+						<li class="nav-item"><a class="nav-link active" href="#about-cont" data-toggle="tab">Sobre</a></li>
+						<li class="nav-item"><a class="nav-link" href="#bottom-tab2" data-toggle="tab">Perfil</a></li>						
 					</ul>
 
 					<div class="tab-content">
@@ -115,7 +113,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card-box">
-                            <h3 class="card-title">Education Informations</h3>
+                            <h3 class="card-title">Educação</h3>
                             <div class="experience-box">
                                 <ul class="experience-list">
                                     <li>
@@ -146,7 +144,7 @@
                             </div>
                         </div>
                         <div class="card-box mb-0">
-                            <h3 class="card-title">Experience</h3>
+                            <h3 class="card-title">Experiência</h3>
                             <div class="experience-box">
                                 <ul class="experience-list">
                                     <li>

@@ -42,10 +42,12 @@
             include_once 'menu.php';
         ?>        
         <!-- fim do menu principal -->
+
+        <!-- A partir daqui precisa separar o que cada tipo de usuário vai ver -->
         <div class="page-wrapper">
             <div class="content">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-4">
                         <div class="dash-widget">
 							<span class="dash-widget-bg1"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
 							<div class="dash-widget-info text-right">
@@ -54,7 +56,7 @@
 							</div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-4">
                         <div class="dash-widget">
                             <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
                             <div class="dash-widget-info text-right">
@@ -63,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-4">
                         <div class="dash-widget">
                             <span class="dash-widget-bg3"><i class="fa fa-user-md" aria-hidden="true"></i></span>
                             <div class="dash-widget-info text-right">
@@ -72,15 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="dash-widget">
-                            <span class="dash-widget-bg4"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>
-                            <div class="dash-widget-info text-right">
-                                <h3>618</h3>
-                                <span class="widget-title4">Espera <i class="fa fa-check" aria-hidden="true"></i></span>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>				
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-8 col-xl-8">
@@ -267,7 +261,7 @@
                                 </ul>
                             </div>
                             <div class="card-footer text-center bg-white">
-                                <a href="doctors.html" class="text-muted">Ver todos os Doutores</a>
+                                <a href="doctors.php" class="text-muted">Ver todos os Doutores</a>
                             </div>
                         </div>
                     </div>

@@ -54,13 +54,13 @@
                 </div>
                 <form>
                     <div class="card-box">
-                        <h3 class="card-title">Basic Informations</h3>
+                        <h3 class="card-title">Informações Básicas</h3>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="profile-img-wrap">
                                     <img class="inline-block" src="assets/img/user.jpg" alt="user">
                                     <div class="fileupload btn">
-                                        <span class="btn-text">edit</span>
+                                        <span class="btn-text">editar</span>
                                         <input class="upload" type="file">
                                     </div>
                                 </div>
@@ -68,19 +68,19 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group form-focus">
-                                                <label class="focus-label">First Name</label>
+                                                <label class="focus-label">Nome</label>
                                                 <input type="text" class="form-control floating" value="John">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group form-focus">
-                                                <label class="focus-label">Last Name</label>
+                                                <label class="focus-label">Sobrenome</label>
                                                 <input type="text" class="form-control floating" value="Doe">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group form-focus">
-                                                <label class="focus-label">Birth Date</label>
+                                                <label class="focus-label">Data de Aniversário</label>
                                                 <div class="cal-icon">
                                                     <input class="form-control floating datetimepicker" type="text" value="05/06/1985">
                                                 </div>
@@ -88,10 +88,10 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group form-focus select-focus">
-                                                <label class="focus-label">Gendar</label>
+                                                <label class="focus-label">Sexo</label>
                                                 <select class="select form-control floating">
-                                                    <option value="male selected">Male</option>
-                                                    <option value="female">Female</option>
+                                                    <option value="male selected">Masculino</option>
+                                                    <option value="female">Feminino</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -101,58 +101,58 @@
                         </div>
                     </div>
                     <div class="card-box">
-                        <h3 class="card-title">Contact Informations</h3>
+                        <h3 class="card-title">Informações de Contato</h3>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Address</label>
+                                    <label class="focus-label">Endereço</label>
                                     <input type="text" class="form-control floating" value="4487 Snowbird Lane">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">State</label>
+                                    <label class="focus-label">Estado</label>
                                     <input type="text" class="form-control floating" value="New York">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Country</label>
+                                    <label class="focus-label">Cidade</label>
                                     <input type="text" class="form-control floating" value="United States">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Pin Code</label>
+                                    <label class="focus-label">CEP</label>
                                     <input type="text" class="form-control floating" value="10523">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Phone Number</label>
+                                    <label class="focus-label">Telefone</label>
                                     <input type="text" class="form-control floating" value="631-889-3206">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-box">
-                        <h3 class="card-title">Education Informations</h3>
+                        <h3 class="card-title">Informações de Educação</h3>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Institution</label>
+                                    <label class="focus-label">Instituição</label>
                                     <input type="text" class="form-control floating" value="Oxford University">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Subject</label>
+                                    <label class="focus-label">Assunto</label>
                                     <input type="text" class="form-control floating" value="Computer Science">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Starting Date</label>
+                                    <label class="focus-label">Data inicio</label>
 									<div class="cal-icon">
 										<input type="text" class="form-control floating datetimepicker" value="01/06/2002">
 									</div>
@@ -160,7 +160,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Complete Date</label>
+                                    <label class="focus-label">Data fim</label>
 									<div class="cal-icon">
 										<input type="text" class="form-control floating datetimepicker" value="31/05/2006">
 									</div>
@@ -168,13 +168,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Degree</label>
+                                    <label class="focus-label">Curso</label>
                                     <input type="text" class="form-control floating" value="BE Computer Science">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Grade</label>
+                                    <label class="focus-label">Graduação</label>
                                     <input type="text" class="form-control floating" value="Grade A">
                                 </div>
                             </div>
@@ -184,29 +184,29 @@
                         </div>
                     </div>
                     <div class="card-box">
-                        <h3 class="card-title">Experience Informations</h3>
+                        <h3 class="card-title">Experiência Profissional</h3>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Company Name</label>
+                                    <label class="focus-label">Empresa</label>
                                     <input type="text" class="form-control floating" value="Digital Devlopment Inc">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Location</label>
+                                    <label class="focus-label">Cidade</label>
                                     <input type="text" class="form-control floating" value="United States">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Job Position</label>
+                                    <label class="focus-label">Cargo</label>
                                     <input type="text" class="form-control floating" value="Web Developer">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Period From</label>
+                                    <label class="focus-label">Data Inicio</label>
 									<div class="cal-icon">
 										<input type="text" class="form-control floating datetimepicker" value="01/07/2007">
 									</div>
@@ -214,7 +214,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-focus">
-                                    <label class="focus-label">Period To</label>
+                                    <label class="focus-label">Data Fim</label>
 									<div class="cal-icon">
 										<input type="text" class="form-control floating datetimepicker" value="08/06/2018">
 									</div>
@@ -230,215 +230,7 @@
                     </div>
                 </form>
             </div>
-            <div class="notification-box">
-                <div class="msg-sidebar notifications msg-noti">
-                    <div class="topnav-dropdown-header">
-                        <span>Messages</span>
-                    </div>
-                    <div class="drop-scroll msg-list-scroll" id="msg_list">
-                        <ul class="list-box">
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">R</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Richard Miles </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item new-message">
-                                        <div class="list-left">
-                                            <span class="avatar">J</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">John Doe</span>
-                                            <span class="message-time">1 Aug</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">T</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Tarah Shropshire </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">M</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Mike Litorus</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">C</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Catherine Manseau </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">D</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Domenic Houston </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">B</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Buster Wigton </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">R</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Rolland Webber </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">C</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Claire Mapes </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">M</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Melita Faucher</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">J</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Jeffery Lalor</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">L</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Loren Gatlin</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">T</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Tarah Shropshire</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="topnav-dropdown-footer">
-                        <a href="chat.html">See all messages</a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     <div class="sidebar-overlay" data-reff=""></div>

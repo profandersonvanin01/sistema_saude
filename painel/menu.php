@@ -38,9 +38,9 @@
                          <span><?php echo ucfirst($_SESSION['nome_usuario']); ?></span>
                     </a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="profile.html">Meu Perfil</a>
-						<a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
-						<a class="dropdown-item" href="settings.html">Ajustes</a>
+						<a class="dropdown-item" href="profile.php">Meu Perfil</a>
+						<a class="dropdown-item" href="edit-profile.php">Editar Perfil</a>
+						<a class="dropdown-item" href="settings.php">Ajustes</a>
 						<a class="dropdown-item" href="logout.php">Sair</a>
 					</div>
                 </li>
@@ -48,10 +48,10 @@
             <div class="dropdown mobile-user-menu float-right">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="profile.html">Meu Perfil</a>
-                    <a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
-                    <a class="dropdown-item" href="settings.html">Ajustes</a>
-                    <a class="dropdown-item" href="login.html">Sair</a>
+                    <a class="dropdown-item" href="profile.php">Meu Perfil</a>
+                    <a class="dropdown-item" href="edit-profile.php">Editar Perfil</a>
+                    <a class="dropdown-item" href="settings.php">Ajustes</a>
+                    <a class="dropdown-item" href="logout.php">Sair</a>
                 </div>
             </div>
         </div>
@@ -72,9 +72,6 @@
                         <li>
                             <a href="appointments.php"><i class="fa fa-calendar"></i> <span>Agendamentos</span></a>
                         </li>
-                        <!-- <li>
-                            <a href="schedule.html"><i class="fa fa-calendar-check-o"></i> <span>Doctor Schedule</span></a>
-                        </li> -->
                         <li>
                             <a href="departments.php"><i class="fa fa-hospital-o"></i> <span>Departamentos</span></a>
                         </li>
