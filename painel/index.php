@@ -1,10 +1,29 @@
+<?php
+    session_start();
+    if(
+        (!isset($_SESSION['id_usuario']) == true) and
+        (!isset($_SESSION['nome_usuario']) == true) and
+        (!isset($_SESSION['email_usuario']) == true) and
+        (!isset($_SESSION['tipo_usuario']) == true)
+    ){
+        unset($_SESSION['id_usuario']);
+        unset($_SESSION['nome_usuario']);
+        unset($_SESSION['email_usuario']);
+        unset($_SESSION['tipo_usuario']);
+        header('Location: ../index.html');
+    }
+
+    require 'conecta.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <title>MediaLab</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
@@ -62,41 +81,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
-				<div class="row">
-					<div class="col-12 col-md-6 col-lg-6 col-xl-6">
-						<div class="card">
-							<div class="card-body">
-								<div class="chart-title">
-									<h4>Total de Pacientes</h4>
-									<span class="float-right"><i class="fa fa-caret-up" aria-hidden="true"></i> 15% Higher than Last Month</span>
-								</div>	
-								<canvas id="linegraph"></canvas>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 col-lg-6 col-xl-6">
-						<div class="card">
-							<div class="card-body">
-								<div class="chart-title">
-									<h4>Patients In</h4>
-									<div class="float-right">
-										<ul class="chat-user-total">
-											<li><i class="fa fa-circle current-users" aria-hidden="true"></i>ICU</li>
-											<li><i class="fa fa-circle old-users" aria-hidden="true"></i> OPD</li>
-										</ul>
-									</div>
-								</div>	
-								<canvas id="bargraph"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
+                </div>				
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-8 col-xl-8">
 						<div class="card">
 							<div class="card-header">
-								<h4 class="card-title d-inline-block">Agendamentos</h4> <a href="appointments.html" class="btn btn-primary float-right">Ver tudo</a>
+								<h4 class="card-title d-inline-block">Agendamentos</h4> <a href="appointments.php" class="btn btn-primary float-right">Ver tudo</a>
 							</div>
 							<div class="card-body p-0">
 								<div class="table-responsive">
@@ -112,8 +102,8 @@
 										<tbody>
 											<tr>
 												<td style="min-width: 200px;">
-													<a class="avatar" href="profile.html">B</a>
-													<h2><a href="profile.html">Bernardo Galaviz <span>New York, USA</span></a></h2>
+													<a class="avatar" href="profile.php">B</a>
+													<h2><a href="profile.php">Bernardo Galaviz <span>New York, USA</span></a></h2>
 												</td>                 
 												<td>
 													<h5 class="time-title p-0">Agendado com</h5>
@@ -124,13 +114,13 @@
 													<p>7.00 PM</p>
 												</td>
 												<td class="text-right">
-													<a href="appointments.html" class="btn btn-outline-primary take-btn">Consultas</a>
+													<a href="appointments.php" class="btn btn-outline-primary take-btn">Consultas</a>
 												</td>
 											</tr>
 											<tr>
 												<td style="min-width: 200px;">
-													<a class="avatar" href="profile.html">B</a>
-													<h2><a href="profile.html">Bernardo Galaviz <span>New York, USA</span></a></h2>
+													<a class="avatar" href="profile.php">B</a>
+													<h2><a href="profile.php">Bernardo Galaviz <span>New York, USA</span></a></h2>
 												</td>                 
 												<td>
 													<h5 class="time-title p-0">Agendado com</h5>
@@ -141,13 +131,13 @@
 													<p>7.00 PM</p>
 												</td>
 												<td class="text-right">
-													<a href="appointments.html" class="btn btn-outline-primary take-btn">Consultas</a>
+													<a href="appointments.php" class="btn btn-outline-primary take-btn">Consultas</a>
 												</td>
 											</tr>
 											<tr>
 												<td style="min-width: 200px;">
-													<a class="avatar" href="profile.html">B</a>
-													<h2><a href="profile.html">Bernardo Galaviz <span>New York, USA</span></a></h2>
+													<a class="avatar" href="profile.php">B</a>
+													<h2><a href="profile.php">Bernardo Galaviz <span>New York, USA</span></a></h2>
 												</td>                 
 												<td>
 													<h5 class="time-title p-0">Agendado com</h5>
@@ -158,13 +148,13 @@
 													<p>7.00 PM</p>
 												</td>
 												<td class="text-right">
-													<a href="appointments.html" class="btn btn-outline-primary take-btn">Consultas</a>
+													<a href="appointments.php" class="btn btn-outline-primary take-btn">Consultas</a>
 												</td>
 											</tr>
 											<tr>
 												<td style="min-width: 200px;">
-													<a class="avatar" href="profile.html">B</a>
-													<h2><a href="profile.html">Bernardo Galaviz <span>New York, USA</span></a></h2>
+													<a class="avatar" href="profile.php">B</a>
+													<h2><a href="profile.php">Bernardo Galaviz <span>New York, USA</span></a></h2>
 												</td>                 
 												<td>
 													<h5 class="time-title p-0">Agendado com</h5>
@@ -175,13 +165,13 @@
 													<p>7.00 PM</p>
 												</td>
 												<td class="text-right">
-													<a href="appointments.html" class="btn btn-outline-primary take-btn">Consultas</a>
+													<a href="appointments.php" class="btn btn-outline-primary take-btn">Consultas</a>
 												</td>
 											</tr>
 											<tr>
 												<td style="min-width: 200px;">
-													<a class="avatar" href="profile.html">B</a>
-													<h2><a href="profile.html">Bernardo Galaviz <span>New York, USA</span></a></h2>
+													<a class="avatar" href="profile.php">B</a>
+													<h2><a href="profile.php">Bernardo Galaviz <span>New York, USA</span></a></h2>
 												</td>                 
 												<td>
 													<h5 class="time-title p-0">Agendado com</h5>
@@ -192,7 +182,7 @@
 													<p>7.00 PM</p>
 												</td>
 												<td class="text-right">
-													<a href="appointments.html" class="btn btn-outline-primary take-btn">Consultas</a>
+													<a href="appointments.php" class="btn btn-outline-primary take-btn">Consultas</a>
 												</td>
 											</tr>
 										</tbody>
@@ -211,7 +201,7 @@
                                     <li>
                                         <div class="contact-cont">
                                             <div class="float-left user-img m-r-10">
-                                                <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                                <a href="profile.php" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
                                             </div>
                                             <div class="contact-info">
                                                 <span class="contact-name text-ellipsis">John Doe</span>
@@ -222,7 +212,7 @@
                                     <li>
                                         <div class="contact-cont">
                                             <div class="float-left user-img m-r-10">
-                                                <a href="profile.html" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
+                                                <a href="profile.php" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
                                             </div>
                                             <div class="contact-info">
                                                 <span class="contact-name text-ellipsis">Richard Miles</span>
@@ -233,7 +223,7 @@
                                     <li>
                                         <div class="contact-cont">
                                             <div class="float-left user-img m-r-10">
-                                                <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
+                                                <a href="profile.php" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
                                             </div>
                                             <div class="contact-info">
                                                 <span class="contact-name text-ellipsis">John Doe</span>
@@ -244,7 +234,7 @@
                                     <li>
                                         <div class="contact-cont">
                                             <div class="float-left user-img m-r-10">
-                                                <a href="profile.html" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                                <a href="profile.php" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
                                             </div>
                                             <div class="contact-info">
                                                 <span class="contact-name text-ellipsis">Richard Miles</span>
@@ -255,7 +245,7 @@
                                     <li>
                                         <div class="contact-cont">
                                             <div class="float-left user-img m-r-10">
-                                                <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
+                                                <a href="profile.php" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
                                             </div>
                                             <div class="contact-info">
                                                 <span class="contact-name text-ellipsis">John Doe</span>
@@ -266,7 +256,7 @@
                                     <li>
                                         <div class="contact-cont">
                                             <div class="float-left user-img m-r-10">
-                                                <a href="profile.html" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
+                                                <a href="profile.php" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
                                             </div>
                                             <div class="contact-info">
                                                 <span class="contact-name text-ellipsis">Richard Miles</span>
@@ -286,7 +276,7 @@
 					<div class="col-12 col-md-6 col-lg-8 col-xl-8">
 						<div class="card">
 							<div class="card-header">
-								<h4 class="card-title d-inline-block">Novos Pacientes </h4> <a href="patients.html" class="btn btn-primary float-right">Ver todos</a>
+								<h4 class="card-title d-inline-block">Novos Pacientes </h4> <a href="patients.php" class="btn btn-primary float-right">Ver todos</a>
 							</div>
 							<div class="card-block">
 								<div class="table-responsive">

@@ -1,3 +1,23 @@
+<?php
+    session_start();
+    if(
+        (!isset($_SESSION['id_usuario']) == true) and
+        (!isset($_SESSION['nome_usuario']) == true) and
+        (!isset($_SESSION['email_usuario']) == true) and
+        (!isset($_SESSION['tipo_usuario']) == true)
+    ){
+        unset($_SESSION['id_usuario']);
+        unset($_SESSION['nome_usuario']);
+        unset($_SESSION['email_usuario']);
+        unset($_SESSION['tipo_usuario']);
+        header('Location: ../index.html');
+    }
+
+    require 'conecta.php';
+
+?>
+
+
 <!-- menu principal -->
 <div class="header">
 			<div class="header-left">
@@ -14,13 +34,14 @@
 							<img class="rounded-circle" src="assets/img/user.jpg" width="24" alt="Administrador">
 							<span class="status online"></span>
 						</span>
-						<span>Admin</span>
+						<!-- <span>Admin</span> -->
+                         <span><?php echo ucfirst($_SESSION['nome_usuario']); ?></span>
                     </a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="profile.html">Meu Perfil</a>
 						<a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
 						<a class="dropdown-item" href="settings.html">Ajustes</a>
-						<a class="dropdown-item" href="login.html">Sair</a>
+						<a class="dropdown-item" href="logout.php">Sair</a>
 					</div>
                 </li>
             </ul>
@@ -46,36 +67,29 @@
                             <a href="doctors.php"><i class="fa fa-user-md"></i> <span>Doutores</span></a>
                         </li>
                         <li>
-                            <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                            <a href="patients.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                         </li>
                         <li>
-                            <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Agendamentos</span></a>
+                            <a href="appointments.php"><i class="fa fa-calendar"></i> <span>Agendamentos</span></a>
                         </li>
                         <!-- <li>
                             <a href="schedule.html"><i class="fa fa-calendar-check-o"></i> <span>Doctor Schedule</span></a>
                         </li> -->
                         <li>
-                            <a href="departments.html"><i class="fa fa-hospital-o"></i> <span>Departamentos</span></a>
+                            <a href="departments.php"><i class="fa fa-hospital-o"></i> <span>Departamentos</span></a>
                         </li>
 						<li class="submenu">
 							<a href="#"><i class="fa fa-user"></i> <span> Funcionários </span> <span class="menu-arrow"></span></a>
 							<ul style="display: none;">
-								<li><a href="employees.html">Lista de Funcionários</a></li>								
+								<li><a href="employees.php">Lista de Funcionários</a></li>								
 							</ul>
 						</li>						
-						<li class="submenu">
-							<a href="#"><i class="fa fa-flag-o"></i> <span> Relatórios </span> <span class="menu-arrow"></span></a>
-							<ul style="display: none;">
-								<li><a href="expense-reports.html"> Expense Report </a></li>
-								<li><a href="invoice-reports.html"> Invoice Report </a></li>
-							</ul>
-						</li>
                         <li>
-                            <a href="settings.html"><i class="fa fa-cog"></i> <span>Configurações</span></a>
+                            <a href="settings.php"><i class="fa fa-cog"></i> <span>Configurações</span></a>
                         </li>
                         
                         <li>
-                            <a href="calendar.html"><i class="fa fa-calendar"></i> <span>Calendário</span></a>
+                            <a href="calendar.php"><i class="fa fa-calendar"></i> <span>Calendário</span></a>
                         </li>
                         
                         

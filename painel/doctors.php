@@ -1,5 +1,24 @@
+<?php
+    session_start();
+    if(
+        (!isset($_SESSION['id_usuario']) == true) and
+        (!isset($_SESSION['nome_usuario']) == true) and
+        (!isset($_SESSION['email_usuario']) == true) and
+        (!isset($_SESSION['tipo_usuario']) == true)
+    ){
+        unset($_SESSION['id_usuario']);
+        unset($_SESSION['nome_usuario']);
+        unset($_SESSION['email_usuario']);
+        unset($_SESSION['tipo_usuario']);
+        header('Location: ../index.html');
+    }
+
+    require 'conecta.php';
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 
 <!-- doctors23:12-->
@@ -7,7 +26,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <title>MediaLab</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
